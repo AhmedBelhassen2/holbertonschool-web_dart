@@ -4,7 +4,7 @@ import '3-util.dart';
 greetUser() async {
   try {
     final data = jsonDecode(await fetchUserData());
-    return 'Hello ${data?['username']}';
+  return 'Hello ${json.decode(await fetchUserData())['username']}';
   } catch (err) {
     return 'error caught: $err';
   }
