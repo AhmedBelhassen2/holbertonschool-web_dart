@@ -10,9 +10,8 @@ calculateTotal() async {
         for (int idx = 0; idx < userOrder.length; idx++) {
             price += json.decode(await fetchProductPrice(userOrder[idx]));
         }
-        return price;
-    } catch (err) {
-        print('error caught: $err');
-        return -1;
-    }
+       return price;
+  } catch (error) {
+    return -1;
+  }
 }
