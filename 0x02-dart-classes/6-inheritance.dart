@@ -21,7 +21,8 @@ class User extends Password {
         id: userJson['id'],
         name: userJson['name'],
         age: userJson['age'],
-        height: userJson['height']);
+        height: userJson['height'],
+        user_password: '');
   }
   Map toJson() {
     return {
