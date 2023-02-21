@@ -1,10 +1,10 @@
 class User {
-  int id = 0;
+  int id;
   String name = "";
   int age;
   double height;
 
-  User({required this.name, required this.age, required this.height, required id});
+  User({required this.name, required this.age, required this.height, required this.id});
  static User fromJson(Map<dynamic, dynamic> userJson) {
     return User(
       id: userJson['id'],
