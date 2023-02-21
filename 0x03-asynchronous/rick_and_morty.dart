@@ -11,6 +11,6 @@ printRmCharacters() async {
       print("${json[idx]['name']}");
     }
   } catch (error) {
-    return -1;
+    return "error caught: ${error}";
   }
 }
